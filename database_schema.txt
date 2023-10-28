@@ -1,0 +1,16 @@
+CREATE DATABASE loginpage;
+
+//Table creation
+
+
+CREATE TABLE users (
+ name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  security_code VARCHAR(255) NOT NULL
+);
+
+name: A VARCHAR column for storing the user's name.
+email: A VARCHAR column for storing the user's email address. It's set to be unique, assuming that each email should be unique in the table.
+password: A VARCHAR column for storing the user's password. You should hash and salt passwords before storing them in the database for security.
+security_code: A VARCHAR column for storing a security code. This code can be used for various security-related operations, such as password reset.

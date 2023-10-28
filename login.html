@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Sign up container -->
+        <div class="form-container sign-up-container">
+            <form action="/register" method="post">
+                <h1>Sign Up</h1>
+                <div class="empty-container">
+                    <!-- empty -->
+                </div>
+                <input type="text" name="name" placeholder="Name" />
+                <br>
+                <input type="email" name="email" placeholder="Email" />
+                <br>
+                <input type="password" name="password" placeholder="Password" />
+                <br>
+                <input type="text" name="code" placeholder="Security Code" />
+                <a href="#"></a>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Login container -->
+        <div class="form-container sign-in-container">
+            <form action="/login" method="post">
+                <h1>Login</h1> 
+                <div class="empty-container">
+                    <!-- empty -->
+                </div>
+                <input type="email" name="email" placeholder="Email" /> 
+                <br>
+                <input type="password" name="password" placeholder="Password" />
+                <br>
+                <a href="/check">Forgot your password?</a>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Overlay panel -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Login with your registered email and continue your journey</p>
+                    <button class="ghost" id="signIn">Login</button> 
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>New User?</h1>
+                    <p>Create an account and join our family of 40,000+ people around the world</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
